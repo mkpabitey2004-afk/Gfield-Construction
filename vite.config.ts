@@ -9,8 +9,10 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
-  base: "/gfiel-construction1",
+  plugins: [react(), mode === "development" && componentTagger()].filter(
+    Boolean,
+  ),
+  base: "/Gfield-Construction/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
